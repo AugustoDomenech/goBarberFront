@@ -12,11 +12,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\,js$/,
+        test: /\.jsx$|\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
+        loader: "babel-loader",
+        options: {
+          presets: ["@babel/preset-env", "@babel/preset-react"]
         }
+      },
+      {
+        test: /\.css$/,
+        loader: [{ loader: "style-loader" }, { loader: "css-loader" }]
+      },
+      {
+        test: /.*\.(gif|png|jpe?g)$/i,
+        loader: "file-loader"
       }
     ]
   }
