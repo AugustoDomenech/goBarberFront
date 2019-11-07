@@ -1,10 +1,9 @@
 import React from "react";
 import "./app.css";
 
-import bk from "./assets/background.jpg";
-
+import TechList from "./components/TechList";
 function App() {
-  return <img width="100%" src={bk} />;
+  return <TechList />;
 }
 
 export default App;
