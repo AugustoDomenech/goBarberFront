@@ -1,2 +1,1 @@
-# goBarberFront
----
+Aplicando alguns conceitos do ReactJS
