@@ -1,1 +1,1 @@
-Aplicando alguns conceitos do ReactJS Teste
+Aplicando alguns conceitos do ReactJS
